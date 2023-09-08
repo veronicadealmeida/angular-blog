@@ -1,10 +1,12 @@
 <div class="container__small-card">
   <div class="containter__small-card-content">
     <div class="small-card__photo">
-      <a href="$"><img src="{{ photoCover }}" alt="" /></a>
+      <a href="{{ cardLink }}" target="_blank"
+        ><img src="{{ photoCover }}" alt=""
+      /></a>
     </div>
     <div class="small-card__title">
-      <a href="#"
+      <a href="{{ cardLink }}" target="_blank"
         ><h3>
           {{ cardTitle }}
         </h3></a
@@ -15,7 +17,3 @@
     <hr />
   </div>
 </div>
-
-<!-- https://images.pexels.com/photos/838413/pexels-photo-838413.jpeg?auto=compress&cs=tinysrgb&w=1600
-
-https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=1600 -->

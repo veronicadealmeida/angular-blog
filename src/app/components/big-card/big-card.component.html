@@ -1,15 +1,17 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <a href="#"><img src="{{ photoCover }}" alt="" height="295px" /></a>
+    <a [routerLink]="['content', id.toString()]"
+      ><img src="{{ photoCover }}" alt="" height="295px"
+    /></a>
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="#">{{ cardTitle }}</a>
+      <a [routerLink]="['content', id.toString()]">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#"> {{ cardDescription }}</a>
+      <a [routerLink]="['content', id.toString()]"> {{ cardDescription }}</a>
     </p>
   </div>
 </div>
